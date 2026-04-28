@@ -3,49 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Servicio Técnico Profesional</title>
+<title>Servicio Técnico Amarilla</title>
 
 <style>
 body {
   margin:0;
   font-family: Arial;
-  background:#0f0f0f;
+  background:#111;
   color:white;
 }
 
 header {
+  background:url('https://images.unsplash.com/photo-1518770660439-4636190af475') center/cover;
   text-align:center;
-  padding:60px 20px;
-  background:linear-gradient(135deg,#000,#1a1a1a);
+  padding:100px 20px;
 }
 
-h1 {
-  font-size:40px;
-  margin:0;
+header h1 {
+  font-size:45px;
 }
 
-p {
-  color:#ccc;
+.btn {
+  background:#25D366;
+  padding:12px 25px;
+  border-radius:30px;
+  color:white;
+  text-decoration:none;
+  display:inline-block;
+  margin-top:10px;
 }
 
-.servicios {
+section {
+  padding:40px;
+  text-align:center;
+}
+
+.grid {
   display:grid;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   gap:20px;
-  padding:40px;
 }
 
 .card {
   background:#1c1c1c;
-  padding:25px;
-  border-radius:12px;
-  text-align:center;
-  transition:0.3s;
+  padding:20px;
+  border-radius:10px;
 }
 
-.card:hover {
-  transform:scale(1.05);
-  background:#252525;
+input, button {
+  padding:10px;
+  margin:5px;
+  border:none;
+  border-radius:5px;
 }
 
 .whatsapp {
@@ -53,12 +62,11 @@ p {
   bottom:20px;
   right:20px;
   background:#25D366;
-  color:white;
-  padding:15px 20px;
-  border-radius:50px;
+  padding:15px;
+  border-radius:50%;
   text-decoration:none;
-  font-size:18px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.3);
+  color:white;
+  font-size:20px;
 }
 </style>
 </head>
@@ -66,22 +74,63 @@ p {
 <body>
 
 <header>
-  <h1>Servicio Técnico Profesional</h1>
-  <p>Reparación de celulares, PC, notebooks y más</p>
+  <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" width="80">
+  <h1>Servicio Técnico Amarilla</h1>
+  <p>Reparación profesional de celulares y PC</p>
+
+  <a class="btn" href="https://wa.me/543704010650?text=Hola%20quiero%20hacer%20un%20pedido" target="_blank">
+    Hacer pedido por WhatsApp
+  </a>
 </header>
 
-<section class="servicios">
-  <div class="card">📱 Reparación de celulares Android</div>
-  <div class="card">🍎 Reparación de iPhone</div>
-  <div class="card">🔓 Desbloqueo y flasheo</div>
-  <div class="card">🔐 Cuentas Google e iCloud</div>
-  <div class="card">💻 PC y notebooks</div>
-  <div class="card">⚡ Placas electrónicas e inverter</div>
+<section>
+  <h2>Servicios</h2>
+  <div class="grid">
+    <div class="card">📱 Reparación celulares</div>
+    <div class="card">💻 PC y notebooks</div>
+    <div class="card">🔓 Desbloqueos</div>
+    <div class="card">⚡ Electrónica</div>
+  </div>
 </section>
 
-<a class="whatsapp" href="https://wa.me/543704010650" target="_blank">
-  💬 WhatsApp
-</a>
+<section>
+  <h2>Productos / Ofertas</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Cambio de pantalla</h3>
+      <p>Oferta especial 🔥</p>
+      <a class="btn" href="https://wa.me/543704010650?text=Quiero%20cambiar%20pantalla">Consultar</a>
+    </div>
+
+    <div class="card">
+      <h3>Baterías</h3>
+      <p>Desde $XX</p>
+      <a class="btn" href="https://wa.me/543704010650?text=Consulta%20bateria">Consultar</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Video</h2>
+  <iframe width="100%" height="315"
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+  frameborder="0" allowfullscreen></iframe>
+</section>
+
+<section>
+  <h2>Suscribite</h2>
+  <p>Recibí ofertas y novedades</p>
+  <input type="email" placeholder="Tu correo">
+  <button>Suscribirme</button>
+</section>
+
+<section>
+  <h2>Contacto</h2>
+  <p>📞 3704-010650</p>
+  <p>📧 tuemail@gmail.com</p>
+</section>
+
+<a class="whatsapp" href="https://wa.me/543704010650" target="_blank">💬</a>
 
 </body>
 </html>
