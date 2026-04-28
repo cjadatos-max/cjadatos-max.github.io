@@ -3,60 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Servicio Técnico Amarilla</title>
+<title>CJ Servicio Técnico Especializado</title>
 
 <style>
-body {
-  margin:0;
-  font-family: Arial;
-  background:#111;
-  color:white;
-}
-
+body {margin:0;font-family:Arial;background:#0f0f0f;color:white;}
 header {
-  background:url('https://images.unsplash.com/photo-1518770660439-4636190af475') center/cover;
+  background:linear-gradient(135deg,#000,#1a1a1a);
   text-align:center;
-  padding:100px 20px;
+  padding:80px 20px;
 }
-
-header h1 {
-  font-size:45px;
+nav {
+  background:#000;
+  padding:15px;
+  text-align:center;
+  position:sticky;
+  top:0;
 }
-
+nav a {
+  color:white;
+  margin:15px;
+  text-decoration:none;
+  font-size:18px;
+}
+section {padding:60px 20px;text-align:center;}
+h2 {margin-bottom:20px;}
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+.card {
+  background:#1c1c1c;
+  padding:20px;
+  border-radius:10px;
+}
 .btn {
   background:#25D366;
   padding:12px 25px;
   border-radius:30px;
   color:white;
   text-decoration:none;
-  display:inline-block;
-  margin-top:10px;
 }
-
-section {
-  padding:40px;
-  text-align:center;
-}
-
-.grid {
-  display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-
-.card {
-  background:#1c1c1c;
-  padding:20px;
-  border-radius:10px;
-}
-
-input, button {
-  padding:10px;
-  margin:5px;
-  border:none;
-  border-radius:5px;
-}
-
 .whatsapp {
   position:fixed;
   bottom:20px;
@@ -66,7 +53,11 @@ input, button {
   border-radius:50%;
   text-decoration:none;
   color:white;
-  font-size:20px;
+}
+footer {
+  background:#000;
+  padding:20px;
+  text-align:center;
 }
 </style>
 </head>
@@ -74,61 +65,105 @@ input, button {
 <body>
 
 <header>
-  <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" width="80">
-  <h1>Servicio Técnico Amarilla</h1>
-  <p>Reparación profesional de celulares y PC</p>
+<h1>CJ Servicio Técnico Especializado</h1>
+<p>Expertos en reparación electrónica rápida, confiable y con garantía</p>
 
-  <a class="btn" href="https://wa.me/543704010650?text=Hola%20quiero%20hacer%20un%20pedido" target="_blank">
-    Hacer pedido por WhatsApp
-  </a>
+<a class="btn" href="https://wa.me/543704010650?text=Hola%20quiero%20consultar" target="_blank">
+Contactar por WhatsApp
+</a>
 </header>
 
-<section>
-  <h2>Servicios</h2>
-  <div class="grid">
-    <div class="card">📱 Reparación celulares</div>
-    <div class="card">💻 PC y notebooks</div>
-    <div class="card">🔓 Desbloqueos</div>
-    <div class="card">⚡ Electrónica</div>
-  </div>
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#nosotros">Sobre Nosotros</a>
+<a href="#servicios">Servicios</a>
+<a href="#testimonios">Testimonios</a>
+<a href="#precios">Precios</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+<!-- INICIO -->
+<section id="inicio">
+<h2>Bienvenido</h2>
+<p>En CJ Servicio Técnico Especializado contamos con expertos en reparaciones electrónicas. 
+Recomendamos siempre reparar tus dispositivos antes de reemplazarlos, ahorrando dinero y extendiendo su vida útil.</p>
 </section>
 
-<section>
-  <h2>Productos / Ofertas</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Cambio de pantalla</h3>
-      <p>Oferta especial 🔥</p>
-      <a class="btn" href="https://wa.me/543704010650?text=Quiero%20cambiar%20pantalla">Consultar</a>
-    </div>
-
-    <div class="card">
-      <h3>Baterías</h3>
-      <p>Desde $XX</p>
-      <a class="btn" href="https://wa.me/543704010650?text=Consulta%20bateria">Consultar</a>
-    </div>
-  </div>
+<!-- SOBRE NOSOTROS -->
+<section id="nosotros">
+<h2>Sobre Nosotros</h2>
+<p>Somos especialistas en reparación de celulares, iPhone, iPad, tablets, notebooks, PC y placas inverter. 
+Realizamos micro soldaduras y programación de equipos con herramientas profesionales.</p>
 </section>
 
-<section>
-  <h2>Video</h2>
-  <iframe width="100%" height="315"
-  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-  frameborder="0" allowfullscreen></iframe>
+<!-- SERVICIOS -->
+<section id="servicios">
+<h2>Servicios</h2>
+
+<div class="grid">
+<div class="card">📱 Reparación de celulares Android</div>
+<div class="card">🍎 Reparación de iPhone / iPad</div>
+<div class="card">💻 PC y notebooks</div>
+<div class="card">🔧 Micro soldaduras</div>
+<div class="card">⚡ Placas inverter</div>
+<div class="card">🔓 Programación y desbloqueo</div>
+</div>
+
 </section>
 
-<section>
-  <h2>Suscribite</h2>
-  <p>Recibí ofertas y novedades</p>
-  <input type="email" placeholder="Tu correo">
-  <button>Suscribirme</button>
+<!-- TESTIMONIOS -->
+<section id="testimonios">
+<h2>Testimonios</h2>
+
+<div class="grid">
+<div class="card">⭐ Excelente servicio, muy rápido y confiable</div>
+<div class="card">⭐ Repararon mi celular como nuevo</div>
+<div class="card">⭐ Muy recomendable, buena atención</div>
+</div>
+
 </section>
 
-<section>
-  <h2>Contacto</h2>
-  <p>📞 3704-010650</p>
-  <p>📧 tuemail@gmail.com</p>
+<!-- PRECIOS (EDITABLE FÁCIL) -->
+<section id="precios">
+<h2>Precios / Productos</h2>
+
+<div class="grid">
+
+<!-- 🔴 COPIÁ ESTE BLOQUE PARA AGREGAR MÁS -->
+<div class="card">
+<h3>Cambio de pantalla</h3>
+<p>Consultar precio</p>
+<a class="btn" href="https://wa.me/543704010650?text=Consulta%20pantalla">Consultar</a>
+</div>
+
+<div class="card">
+<h3>Baterías</h3>
+<p>Consultar precio</p>
+<a class="btn" href="https://wa.me/543704010650?text=Consulta%20bateria">Consultar</a>
+</div>
+
+</div>
+
 </section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+<h2>Contacto</h2>
+
+<p>📞 3704-010650</p>
+<p>📧 TUEMAIL@gmail.com</p>
+
+<p>Trabajo rápido, confiable y con garantía</p>
+
+<a class="btn" href="https://wa.me/543704010650" target="_blank">
+Escribinos por WhatsApp
+</a>
+
+</section>
+
+<footer>
+<p>© 2026 CJ Servicio Técnico Especializado</p>
+</footer>
 
 <a class="whatsapp" href="https://wa.me/543704010650" target="_blank">💬</a>
 
